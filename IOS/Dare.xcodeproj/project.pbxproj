@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89D8CAA11E2C829286FAD745 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DFECD4B2E780FC5C1521E5 /* Pods.framework */; };
 		BB3C80C11C00235E0080A30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C80C01C00235E0080A30A /* AppDelegate.swift */; };
 		BB3C80C31C00235E0080A30A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C80C21C00235E0080A30A /* ViewController.swift */; };
 		BB3C80C61C00235E0080A30A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3C80C41C00235E0080A30A /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31526A1EC9B21755F88F7A63 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A3DFECD4B2E780FC5C1521E5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3C80BD1C00235E0080A30A /* Dare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3C80C01C00235E0080A30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB3C80C21C00235E0080A30A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		BB3C80DC1C00235E0080A30A /* DareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3C80E01C00235E0080A30A /* DareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareUITests.swift; sourceTree = "<group>"; };
 		BB3C80E21C00235E0080A30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD174FB6563981A656CFF74E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D8CAA11E2C829286FAD745 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520B3C8609F92D1C879E5225 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3DFECD4B2E780FC5C1521E5 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB3C80B41C00235E0080A30A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				BB3C80D41C00235E0080A30A /* DareTests */,
 				BB3C80DF1C00235E0080A30A /* DareUITests */,
 				BB3C80BE1C00235E0080A30A /* Products */,
+				ED8C6E9E5AB20608AC29AB66 /* Pods */,
+				520B3C8609F92D1C879E5225 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = DareUITests;
 			sourceTree = "<group>";
 		};
+		ED8C6E9E5AB20608AC29AB66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD174FB6563981A656CFF74E /* Pods.debug.xcconfig */,
+				31526A1EC9B21755F88F7A63 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB3C80E51C00235E0080A30A /* Build configuration list for PBXNativeTarget "Dare" */;
 			buildPhases = (
+				E96B68698F87FC72F61719B2 /* Check Pods Manifest.lock */,
 				BB3C80B91C00235E0080A30A /* Sources */,
 				BB3C80BA1C00235E0080A30A /* Frameworks */,
 				BB3C80BB1C00235E0080A30A /* Resources */,
+				17EBDB2D4D4A83686ED1AE72 /* Embed Pods Frameworks */,
+				41A829805174684ED7CD2861 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17EBDB2D4D4A83686ED1AE72 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41A829805174684ED7CD2861 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E96B68698F87FC72F61719B2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB3C80B91C00235E0080A30A /* Sources */ = {
@@ -395,6 +470,7 @@
 		};
 		BB3C80E61C00235E0080A30A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD174FB6563981A656CFF74E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dare/Info.plist;
@@ -406,6 +482,7 @@
 		};
 		BB3C80E71C00235E0080A30A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31526A1EC9B21755F88F7A63 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dare/Info.plist;
@@ -482,6 +559,7 @@
 				BB3C80E71C00235E0080A30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB3C80E81C00235E0080A30A /* Build configuration list for PBXNativeTarget "DareTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +568,7 @@
 				BB3C80EA1C00235E0080A30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB3C80EB1C00235E0080A30A /* Build configuration list for PBXNativeTarget "DareUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +577,7 @@
 				BB3C80ED1C00235E0080A30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
